@@ -1,7 +1,7 @@
 PROJECT TITLE: Meme Creator
 PURPOSE OF PROJECT: To present a nice UI for creating hilarious Trump memes
 VERSION or DATE: v1.0
-HOW TO START THIS PROJECT: run "static main()" method from class LogoCreator with no arguments
+HOW TO START THIS PROJECT: run "static main()" method from class JTrump with no arguments
 AUTHORS: Anuv Gupta
 USER INSTRUCTIONS: Make some dank memes
 
