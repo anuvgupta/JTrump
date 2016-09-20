@@ -29,8 +29,10 @@ jtrump
             position relative
         explore
             val about
+            id about
         github
             val source
+            id source
     content
         css
             width 70%
@@ -45,6 +47,7 @@ jtrump
             border-radius 10px
         github
             title
+                id source-code
                 html <h1>source code</h1>
             textA
                 val View JTrump source at&nbsp;
