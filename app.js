@@ -9,7 +9,7 @@ jtrump
             .on('click', function (e) {
                 if (e.detail.noscroll != true) {
                     $(document.body).animate({
-                        scrollTop: $('#JTrump').offset().top + 'px'
+                        scrollTop: $('#jtrump').offset().top + 'px'
                     }, 600);
                     e.stopPropagation();
                 }
@@ -74,7 +74,9 @@ jtrump
         )
     )
     .add(Block('div', 'copyright')
-        .add('text', 1)
+        .add('text', 'textA')
+        .add(Block('text', 'year').data((new Date()).getFullYear().toString()))
+        .add('text', 'textB')
         .add(Block('break').data(2))
     )
 ;
@@ -90,6 +92,9 @@ $(document).ready(function () {
                 // resize window handler
                 $(window).resize(function () {
                     var screenshot = $("img[alt='JTrump Screenshot']");
+                    if (window.innerWidth < 1000)
+                        screenshot.css('width', '95%');
+                    else screenshot.css('width', 'auto');
                     if (window.innerWidth < 800)
                         content.css({
                             width: '92.6%',
@@ -103,14 +108,12 @@ $(document).ready(function () {
                     });
                     var tabs = jtrump.child('tabs').children();
                     if (window.innerWidth < 550) {
-                        screenshot.css('width', '95%');
                         jtrump.child('intro/title').css({
                             'font-size': '100px',
                             'margin-bottom': '30px'
                         });
                         for (tab in tabs) tabs[tab].on('small');
                     } else {
-                        screenshot.css('width', 'auto');
                         jtrump.child('intro/title').css({
                             'font-size': '120px',
                             'margin-bottom': '20px'

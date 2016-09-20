@@ -42,3 +42,7 @@ code {
 h1 {
     text-align: center;
 }
+
+h1[id='jtrump'] {
+    text-align: inherit;
+}
