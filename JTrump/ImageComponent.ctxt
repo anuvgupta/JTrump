@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=x\ y\ path
+comment0.target=ImageComponent(int,\ int,\ java.lang.String)
+comment1.params=path
+comment1.target=void\ setImage(java.lang.String)
+comment2.params=g
+comment2.target=void\ paintComponent(java.awt.Graphics)
+comment3.params=
+comment3.target=void\ select()
+comment4.params=
+comment4.target=void\ hoverEnter()
+comment5.params=
+comment5.target=void\ hoverExit()
+comment6.params=
+comment6.target=void\ deselect()
+numComments=7

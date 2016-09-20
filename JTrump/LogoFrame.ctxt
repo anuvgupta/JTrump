@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=name
+comment0.target=LogoFrame(java.lang.String)
+comment1.params=e
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=
+comment2.target=void\ renderText()
+numComments=3
