@@ -149,6 +149,6 @@ $(document).ready(function () {
         jtrump.child('content/github/author/block/follow')
             .html('<a class="github-button" href="https://github.com/anuvgupta" data-style="mega" data-count-href="/anuvgupta/followers" data-count-api="/users/anuvgupta#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @anuvgupta on GitHub">Follow Me</a>', true)
         ;
-        $.getScript('https://buttons.github.io/buttons.js');
+        $.getScript('js/buttons.github.io.min.js');
     }, 'app', 'jQuery');
 });
