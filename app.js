@@ -129,14 +129,14 @@ $(document).ready(function () {
                 $(window).resize();
                 var index = window.location.href.indexOf('#');
                 if (index != -1) {
- +                    var id = window.location.hash;
- +                    if (id == '#source' || id == '#source-code')
-                          sitarhero.child('tabs/github').on('click', { noscroll: true });
- +                    if (document.getElementById(id.substring(1)) != null) {
-                          $(document.body).animate({
- +                            scrollTop: $(id).offset().top + 'px'
-                          }, /* 700 */ 0);
-                      }
+                    var id = window.location.hash;
+                    if (id == '#source' || id == '#source-code')
+                        sitarhero.child('tabs/github').on('click', { noscroll: true });
+                    if (document.getElementById(id.substring(1)) != null) {
+                        $(document.body).animate({
+                            scrollTop: $(id).offset().top + 'px'
+                        }, /* 700 */ 0);
+                    }
                   }
             }
         });
