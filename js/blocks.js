@@ -93,7 +93,7 @@ Block('tab', function () {
         });
 
         var val = block.key('val');
-        if (window.location.hash == '' && val != 'about')
+        if ((window.location.hash == '' || window.location.hash == "#source") && val != 'about')
             window.location.hash = '#' + val;
     });
     return block;
