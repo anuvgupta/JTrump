@@ -131,7 +131,7 @@ $(document).ready(function () {
                 if (index != -1) {
                     var id = window.location.hash;
                     if (id == '#source' || id == '#source-code')
-                        sitarhero.child('tabs/github').on('click', { noscroll: true });
+                        jtrump.child('tabs/github').on('click', { noscroll: true });
                     if (document.getElementById(id.substring(1)) != null) {
                         $(document.body).animate({
                             scrollTop: $(id).offset().top + 'px'
@@ -149,6 +149,9 @@ $(document).ready(function () {
         jtrump.child('content/github/author/block/follow')
             .html('<a class="github-button" href="https://github.com/anuvgupta" data-style="mega" data-count-href="/anuvgupta/followers" data-count-api="/users/anuvgupta#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @anuvgupta on GitHub">Follow Me</a>', true)
         ;
-        $.getScript('js/buttons.github.io.min.js');
+        $.getScript({
+            async: false,
+            url: 'js/buttons.github.io.min.js'
+        });
     }, 'app', 'jQuery');
 });

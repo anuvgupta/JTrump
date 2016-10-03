@@ -93,14 +93,14 @@ Block('tab', function () {
         });
 
         var val = block.key('val');
-        if (val != 'about') window.location.hash = '#' + val;
-        else window.location.hash = '';
+        if (window.location.hash == '' && val != 'about')
+            window.location.hash = '#' + val;
     });
     return block;
 }, function (block, data, css) {
+    var val = data('val');
+    block.key('val', val).child('text').html(val);
     block.on('click', function () {
-        var val = data('val');
-        block.key('val', val).child('text').html(val);
         var children = block.parent(1).child('content').children();
         for (child in children) {
             if (children.hasOwnProperty(child)) {
