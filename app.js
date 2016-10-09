@@ -151,7 +151,7 @@ $(document).ready(function () {
         ;
         $.getScript({
             async: false,
-            url: 'js/buttons.github.io.min.js'
+            url: 'https://buttons.github.io/buttons.js'
         });
     }, 'app', 'jQuery');
 });
