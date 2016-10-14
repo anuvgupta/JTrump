@@ -159,16 +159,26 @@ public class LogoFrame extends JFrame //declare class LogoFrame as a type of JFr
         cCaption2P.add(caption2TF); //add second caption textfield to second caption panel
         bContent.add(cCaption2P); //add second caption panel to left body content panel
 
-        //create a caption options panel
-        JPanel cOptionP = new JPanel(new GridLayout(1, 4)); //declare and initialize caption options panel
+        //create caption order/options panels
+        JPanel cOrderP = new JPanel(new BorderLayout());
+        JPanel cOptionP = new JPanel(new GridLayout(1, 5)); //declare and initialize caption options panel
+        JLabel option0L = new JLabel("order:  "); //create new JLabel to title options
+        option0L.setForeground(Color.WHITE); //set order JLabel text color to static white
+        option0L.setFont(caption1LN.getFont()); //set order JLabel font to the same font as the font of first caption label
+        option0L.setHorizontalAlignment(SwingConstants.LEFT); //align text in order label to left alignment
+        option0L.setBackground(optionsGray); //set background of order label to default gray
         ButtonGroup optionsBG = new ButtonGroup(); //declare and initialize options buttongroup
         cOptionP.setBackground(optionsGray); //set background of caption options panel to default gray
-        JLabel option1L = new JLabel("default "); //create new JLabel to title first option (default captions)
+        cOrderP.setBackground(optionsGray); //set background of caption order panel to default gray
+        cOrderP.add(option0L, BorderLayout.WEST); //add order label to caption order panel
+        JLabel option1L = new JLabel("base "); //create new JLabel to title first option (default captions)
         option1L.setForeground(Color.WHITE); //set default JLabel text color to static white
         option1L.setFont(caption1LN.getFont()); //set default JLabel font to the same font as the font of first caption label
         option1L.setHorizontalAlignment(SwingConstants.RIGHT); //align text in option one label to right alignment
+        option1L.setBackground(optionsGray); //set background of default label to default gray
         cOptionP.add(option1L); //add default label to caption options panel
         option1B = new JRadioButton(); //create new radiobutton for default option
+        option1B.setBackground(optionsGray); //set background of option 1 button to default gray
         option1B.addMouseListener(new ClickListener()); //add new custom mouse listener to the default option radio button
         cOptionP.add(option1B); //add default option radiobutton to caption options panel
         optionsBG.add(option1B); //add default option radiobutton to caption options buttongroup
@@ -176,12 +186,18 @@ public class LogoFrame extends JFrame //declare class LogoFrame as a type of JFr
         option2L.setForeground(Color.WHITE); //set switched JLabel text color to static white
         option2L.setFont(caption1LN.getFont()); //set switched JLabel font to the same font as the font of first caption label
         option2L.setHorizontalAlignment(SwingConstants.RIGHT); //align text in second option label to right alignment
+        option2L.setBackground(optionsGray); //set background of switch label to default gray
         cOptionP.add(option2L); //add switched label to caption options panel
         option2B = new JRadioButton(); //create new radiobutton for switched option
+        option2B.setBackground(optionsGray); //set background of option 2 button to default gray
         option2B.addMouseListener(new ClickListener()); //add new custom mouse listener to the switched option radio button
         cOptionP.add(option2B); //add switched option radiobutton to caption options panel
         optionsBG.add(option2B); //add switched option radiobutton to caption options buttongroup
-        bContent.add(cOptionP); //add caption options panel to left body content panel
+        optionsBG.clearSelection(); //deselect both options
+        option1B.setSelected(true); //select first option
+        cOptionP.setAlignmentX(JComponent.LEFT_ALIGNMENT); // align radio buttons to left
+        cOrderP.add(cOptionP); //add caption options panel to caption order panel
+        bContent.add(cOrderP); //add caption order panel to left body content panel
 
         //create font label panel
         JPanel tFontLP = new JPanel(new BorderLayout());//declare and initialize new JPanel for font label (with a BorderLayout)
