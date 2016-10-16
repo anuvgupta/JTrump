@@ -134,6 +134,7 @@ $(document).ready(function () {
                 var renderer = new marked.Renderer();
                 content.child('explore').html(marked(data, { renderer: renderer })).css('opacity', '1');
                 jtrump.fill(document.body);
+                // document.body.innerHTML = jtrump.node().innerHTML;
                 jtrump.child('tabs/explore').on('click', { noscroll: true });
                 document.body.style.opacity = '1';
                 $(window).resize();
