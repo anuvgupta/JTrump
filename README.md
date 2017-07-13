@@ -7,7 +7,7 @@
 Trump meme creator. Enough said.
 
 ## screenshot
-![JTrump Screenshot](http://anuv.me/JTrump/img/screenshot.png)
+![JTrump Screenshot](http://github.anuv.me/JTrump/img/screenshot.png)
 
 ## instructions
  1. Install [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
