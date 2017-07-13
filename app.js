@@ -91,7 +91,7 @@ $(document).ready(function () {
             .html('<a class="github-button" href="https://github.com/anuvgupta/JTrump/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch anuvgupta/JTrump on GitHub">Watch</a>', true)
         ;
         jtrump.child('content/github/author/block/follow')
-            .html('<a class="github-button" href="https://github.com/anuvgupta" aria-label="Follow @anuvgupta on GitHub">Follow Me</a>', true)
+            .html('<a class="github-button" href="https://github.com/anuvgupta" data-size="large" data-show-count="true" aria-label="Follow @anuvgupta on GitHub">Follow Me</a>', true)
         ;
 
         var content = jtrump.child('content');
