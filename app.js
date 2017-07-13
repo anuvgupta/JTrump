@@ -86,12 +86,12 @@ $(document).ready(function () {
     jtrump.load(function () {
         // load github buttons
         jtrump.child('content/github/buttons/block/content')
-            .html('<a class="github-button" href="https://github.com/anuvgupta/JTrump" data-icon="octicon-star" data-style="mega" data-count-href="/anuvgupta/JTrump/stargazers" data-count-api="/repos/anuvgupta/JTrump#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star anuvgupta/JTrump on GitHub">Star</a><br/>', true)
-            .html('<a class="github-button" href="https://github.com/anuvgupta/JTrump/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/anuvgupta/JTrump/network" data-count-api="/repos/anuvgupta/JTrump#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork anuvgupta/JTrump on GitHub">Fork</a><br/>', true)
-            .html('<a class="github-button" href="https://github.com/anuvgupta/JTrump" data-icon="octicon-eye" data-style="mega" data-count-href="/anuvgupta/JTrump/watchers" data-count-api="/repos/anuvgupta/JTrump#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch anuvgupta/JTrump on GitHub">Watch</a><br/>', true)
+            .html('<a class="github-button" href="https://github.com/anuvgupta/JTrump" data-icon="octicon-star" aria-label="Star anuvgupta/JTrump on GitHub">Star</a>', true)
+            .html('<a class="github-button" href="https://github.com/anuvgupta/JTrump/fork" data-icon="octicon-repo-forked" aria-label="Fork anuvgupta/JTrump on GitHub">Fork</a>', true)
+            .html('<a class="github-button" href="https://github.com/anuvgupta/JTrump/subscription" data-icon="octicon-eye" aria-label="Watch anuvgupta/JTrump on GitHub">Watch</a>', true)
         ;
         jtrump.child('content/github/author/block/follow')
-            .html('<a class="github-button" href="https://github.com/anuvgupta" data-style="mega" data-count-href="/anuvgupta/followers" data-count-api="/users/anuvgupta#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @anuvgupta on GitHub">Follow Me</a>', true)
+            .html('<a class="github-button" href="https://github.com/anuvgupta" aria-label="Follow @anuvgupta on GitHub">Follow Me</a>', true)
         ;
 
         var content = jtrump.child('content');
