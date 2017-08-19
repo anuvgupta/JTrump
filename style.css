@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: myCenturyGothic;
-    src: url("http://github.anuv.me/pocketjs/fonts/centurygothic.ttf");
+    src: url('fonts/centurygothic.ttf');
 }
 
 * {
@@ -47,8 +47,4 @@ code {
 
 h1 {
     text-align: center;
-}
-
-h1[id='jtrump'] {
-    text-align: inherit;
 }
