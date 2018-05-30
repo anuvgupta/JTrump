@@ -1,7 +1,6 @@
 # JTrump
-&nbsp;Donald Trump themed meme creator in Java  
-&nbsp;&nbsp;&nbsp;*Graphics project for my Computer Programming class*  
-&nbsp;&nbsp;&nbsp;*Other projects can be found at [anuvgupta/compprog](https://github.com/anuvgupta/compprog)*
+Donald Trump themed meme creator in Java  
+*Graphics project for my Computer Programming class*  
 
 ## idea
 Trump meme creator. Enough said.
