@@ -38,3 +38,7 @@ View full credits in [`README.TXT`](https://github.com/anuvgupta/JTrump/blob/mas
 *Anuv Gupta and JTrump take no credit for and have no association with the legal owners/creators of the above intellectual property (ie. JPG images). All credit belongs to the respectively credited entities, and any other entities that claim valid legal ownership of such property. In addition, Anuv Gupta and JTrump take no credit for and have no association with any entities or property belonging or related to [Donald Trump](https://www.donaldjtrump.com/) and his political campaign. Anuv Gupta does not claim Donald Trump's face and/or image as representative of JTrump or himself, and takes no responsibility for any liabilities or issues regarding the person/image of Donald Trump. Any and all similarities or resemblances to the aforementioned entities are completely unintentional and by chance, or for purposes purely driven by education and/or entertainment.*  
 &nbsp;  
 For any issues or questions, please contact [me@anuv.me](mailto:me@anuv.me) by email.
+
+
+&nbsp;  
+*2015*
