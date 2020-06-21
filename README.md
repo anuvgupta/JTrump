@@ -1,5 +1,5 @@
 # JTrump
-Donald Trump themed meme creator in Java  
+SFHS Computer Science — Donald Trump-themed Meme Creator in Java 
 *Graphics project for my Computer Programming class*  
 
 ## idea
